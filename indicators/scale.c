@@ -1,6 +1,7 @@
 #include "../indicators.h"
 
 int ti_scale_start(TI_REAL const *options) {
+    (void)options;
     return 0;
 }
 

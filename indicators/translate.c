@@ -1,6 +1,7 @@
 #include "../indicators.h"
 
 int ti_translate_start(TI_REAL const *options) {
+    (void)options;
     return 0;
 }
 
