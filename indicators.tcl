@@ -170,6 +170,8 @@ lappend indicators [list simple "Vector Addition" add 2 0 1 {real real} {} {add}
 lappend indicators [list simple "Vector Subtraction" sub 2 0 1 {real real} {} {sub}]
 lappend indicators [list simple "Vector Multiplication" mul 2 0 1 {real real} {} {mul}]
 lappend indicators [list simple "Vector Division" div 2 0 1 {real real} {} {div}]
+lappend indicators [list simple "Vector Scale" "scale" 1 1 1 {real} {factor} {scaled}]
+lappend indicators [list simple "Vector Translate" "translate" 1 1 1 {real} {amount} {translated}]
 
 #Simple functions taking one input
 lappend indicators [list simple "Vector Absolute Value" abs 1 0 1 {real} {} {abs}]

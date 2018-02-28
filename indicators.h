@@ -60,7 +60,7 @@ extern "C" {
 
 #define TI_REAL double
 
-#define TI_INDICATOR_COUNT 104 /* Total number of indicators. */
+#define TI_INDICATOR_COUNT 106 /* Total number of indicators. */
 
 #define TI_OKAY                    0
 #define TI_INVALID_OPTION          1
@@ -1261,6 +1261,22 @@ int ti_rsi(int size,
 
 
 
+/* Scale */
+/* Type: simple */
+/* Input arrays: 1    Options: 1    Output arrays: 1 */
+/* Inputs: real */
+/* Options: factor */
+/* Outputs: real */
+int ti_scale_start(TI_REAL const *options);
+int ti_scale(int size,
+      TI_REAL const *const *inputs,
+      TI_REAL const *options,
+      TI_REAL *const *outputs);
+
+
+
+
+
 /* Vector Sine */
 /* Type: simple */
 /* Input arrays: 1    Options: 0    Output arrays: 1 */
@@ -1493,6 +1509,22 @@ int ti_torad(int size,
 /* Outputs: tr */
 int ti_tr_start(TI_REAL const *options);
 int ti_tr(int size,
+      TI_REAL const *const *inputs,
+      TI_REAL const *options,
+      TI_REAL *const *outputs);
+
+
+
+
+
+/* Translate */
+/* Type: simple */
+/* Input arrays: 1    Options: 1    Output arrays: 1 */
+/* Inputs: real */
+/* Options: amount */
+/* Outputs: real */
+int ti_translate_start(TI_REAL const *options);
+int ti_translate(int size,
       TI_REAL const *const *inputs,
       TI_REAL const *options,
       TI_REAL *const *outputs);
